@@ -1,0 +1,228 @@
+
+<html>
+<head>
+   
+    <title>robo Website</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, serif;
+            background-color: antiquewhite;
+        }
+
+        header {
+            background-color: #f0974e;
+            color: rgb(254, 253, 251);
+            text-align: center;
+            padding: 20px 0;
+            align-items: center;
+        }
+
+        nav {
+            background-color: #f93b3b;
+            color: rgb(92, 15, 15);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            border-radius: 7cap;
+        }
+
+        .services, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service-item, .contact-info {
+            background-color: #e38467;
+            border: 1px solid #ef1919;
+            padding: 15px;
+            margin: 10px;
+            flex: 1 1 300px;
+            text-align: center;
+            color: #650606;
+            border-radius: 7cap;
+            
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            
+           
+        }
+
+        .gallery img {
+            width: 100%;
+            border: 1px solid #e02eab;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: rgba(223, 45, 45, 0.494);
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+        button{
+            color: rgb(159, 114, 55);
+            padding: 10px;
+            margin: 30px;
+            border-style: dotted;
+            border-radius: 7cap;
+
+
+        }
+        h2{
+            color: blueviolet;
+        }
+        
+          
+          .logo a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+          }
+          
+          nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+          }
+          
+          nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+          }
+          
+          nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+          }
+          
+          .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+          }
+          
+          .search-bar input[type="text"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 1000px;
+            position: absolute;
+            left:15%;
+          }
+          
+          .search-bar button {
+            background-color: #30dffe;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 1cap;
+          }
+          
+          .search-bar button:hover {
+            background-color: #d62828;
+          }
+          
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>robotics world</h1>
+        <p>elictronic components . </p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search..." >
+            <button type="submit">Search</button>
+          </div>
+    </header>
+
+    <nav>
+        <a href="https://in.pinterest.com/pin/gursirat-cheema--669910513317602828/">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+
+    <div class="container">
+        <section id="services" class="services">
+            
+            <h2>Our Services</h2>
+
+            <div class="service-item">
+                <h3>Micro controllers</h3>
+                <p>arduino uno<br>
+                arduino nano<br>
+            arduino mega<br>
+        </p>
+        <a href="https://robu.in/product-category/microcontroller-development-board/official-arduino-boards/original-arduino-boards/"><button>click here</button></a>
+            </div>
+            <div class="service-item">
+                <h3>Bread board</h3>
+                <a href="https://en.wikipedia.org/wiki/Breadboard"><button>click here</button></a>
+                
+            </div>
+            <div class="service-item">
+                <h3>Sensors</h3>
+                <a href="https://robu.in/product-category/sensor-modules/"><button>click here</button></a>
+                
+                
+            </div>
+           
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Our Gallery</h2>
+            <img src="https://m.media-amazon.com/images/I/61V7-pm5ktL._AC_UF1000,1000_QL80_.jpg" alt=" Image 1">
+            <img src="https://robu.in/wp-content/uploads/2019/12/Official-Arduino-Nano-2.jpg" alt=" Image 2">
+            <img src="https://robu.in/wp-content/uploads/2019/12/Arduino-Mega-2560-ATmega2560-4.jpg" alt=" Image 3">
+            <img src="https://storage.googleapis.com/sproboticworks/master/assets/images/blog/blog-2017093082822.jpg " alt=" Image 4">
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <h3>Address</h3>
+                <p>chadigarh</p>
+                
+            </div>
+            <div class="contact-info">
+                <h3>Phone</h3>
+                <p>9799448976</p>
+            </div>
+            <div class="contact-info">
+                <h3>Email</h3>
+                <p>kuldeep@gmail.com</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 all shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
